@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link type="text/css" href="css/selectmenu/jquery.ui.core.css" rel="stylesheet" />
+    <link type="text/css" href="css/selectmenu/jquery.ui.theme.css" rel="stylesheet" />
+    <link type="text/css" href="css/selectmenu/jquery.ui.selectmenu.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/libs/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/libs/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="js/libs/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/libs/ui/jquery.ui.position.js"></script>
+
+    <script type="text/javascript" src="js/libs/jquery.ui.selectmenu.js"></script>
+
+</head>
+<body>
+<!--<h2>"dropdown" Style</h2>-->
+
+<fieldset>
+    <label for="speedC"></label>
+    <select name="speedC" id="speedC" style="background: white; visibility: visible;">
+        <option value="Slower" class="whoo">Slower</option>
+        <option value="Slow">Slow</option>
+        <option value="Medium" selected="selected">Medium</option>
+        <option value="Fast">Fast</option>
+        <option value="Faster">Faster</option>
+    </select>
+</fieldset>
+
+
+<script type="text/javascript">
+
+//    console.log ($('#select'));
+//    $('#select').selectmenu();
+
+    $('select#speedC').selectmenu(
+            {
+                menuWidth: 400,
+                width: 300
+            }
+    );
+
+</script>
+
+</body>
+</html>

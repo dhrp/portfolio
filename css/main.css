@@ -1,0 +1,88 @@
+
+div {
+    /*border: 2px dashed red;*/
+}
+
+body {
+    background-color: white;
+    font-family: "DaxlinePro", "American Typewriter", "futura-pt", sans-serif;
+}
+
+footer {
+    font-family: "DaxlinePro", "American Typewriter", "futura-pt", sans-serif;
+
+}
+
+.gridBlock {
+    width: 130px;
+    height: 130px;
+    background-color: #f8f8ff;
+    float: left;
+    margin: 10px;
+    scale: 2;
+    position: relative;
+    top: 0px;
+}
+
+.gridblock.bottom {
+    /*background-color: #fafad2;*/
+
+}
+
+.innerblock {
+    margin: 5px;
+    /*background-color: black;*/
+}
+
+.overlay {
+    /*background-color: #8b0000;*/
+    position: absolute;
+    top: 0; bottom: 0; right:  0; left: 0;
+    /*height: 80px;*/
+    /*width: 80px;*/
+}
+
+
+#titlecontainer {
+
+    /*font-size: 33pt;*/
+    position: relative;
+    display: block;
+    float: left;
+    margin-top: 75px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#portfolioTitle {
+    font-size: 22pt;
+}
+
+#gridContainer, #gridContainerBottom {
+    /*border: solid 1px black;*/
+    width: 640px;
+
+    position: relative;
+    float: left;
+    /*margin-left: 100px;*/
+    margin-top: 40px;
+
+    /*top: 40px;*/
+
+}
+
+#blockPositioner {
+    width: 640px;
+    /*height: 300px;*/
+    display: block;
+    position: relative;
+    /*background-color: #050505;*/
+    float: left;
+    /*overflow: hidden;*/
+
+}
+
+#wrapper {
+    position: relative;
+    /*background-color: #FFFFFB;*/
+}
