@@ -74,14 +74,14 @@
             <div id="b15" class="gridBlock bottom" data-categories="service product"><img src="images/up-now_tmb.jpg"> </div>
 
             <!--The template-->
-            <script id="scriptBox" data-template-name="itemTemplate" type="text/x-handlebars">
-                <img {{bindAttr src="imgsrc"}} alt="Logo">{{myProperty}}
+            <script data-template-name="itemTemplate" type="text/x-handlebars">
+                <img {{bindAttr src="imgsrc"}} alt="Logo"><div  > {{blah}} - {{myViewRootProperty}} {{visible}} </div>
             </script>
 
             <!--The spot to render all the items-->
             <script type="text/x-handlebars">
                 {{#each Portfolio.DisplayCollection}}
-                    {{view Portfolio.MyView ItemBinding="this"}}
+                    {{view Portfolio.MyView contentBinding="this"}}
                 {{/each}}
             </script>
 
@@ -95,8 +95,14 @@
     <br style="clear: both;">
 </div>
 
+<script data-template-name="simpleTemplate" type="text/x-handlebars">
+    <div>simpleTemplate</div>
+</script>
+
 
 <footer style="margin-left: 75px; margin-top: 30px;">Filter | About | More | Even more</footer>
+
+
 
 
 <script type="text/javascript">
