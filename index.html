@@ -71,11 +71,13 @@
             <div id="b12" class="gridBlock bottom" data-categories="product interaction"><img src="images/smart-ex_tmb.jpg"> </div>
             <div id="b13" class="gridBlock bottom" data-categories="interaction web service"><img src="images/ssq_tmb.jpg"> </div>
             <div id="b14" class="gridBlock bottom" data-categories="web visual"><img src="images/stwc_tmb.jpg"> </div>
-            <div id="b15" class="gridBlock bottom" data-categories="service product"><img src="images/up-now_tmb.jpg"> </div>
 
             <!--The template-->
             <script data-template-name="itemTemplate" type="text/x-handlebars">
-                <img {{bindAttr src="imgsrc"}} alt="Logo"><div  > {{blah}} - {{myViewRootProperty}} {{visible}} </div>
+                <img {{bindAttr src="imgsrc"}} alt="Logo"><div  > <!-- visible - {{visible}} --></div>
+                <div class="overlay">
+                       <img {{bindAttr src="overlimgsrc"}}>
+                </div>
             </script>
 
             <!--The spot to render all the items-->
