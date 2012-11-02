@@ -14,13 +14,33 @@
 
     <script type="text/javascript" src="js/libs/jquery.ui.selectmenu.js"></script>
 
+    <style type="text/css">
+        .block {
+            height: 130px;
+            width: 130px;
+            background-color: navy;
+            margin: 5px;
+            position: relative;
+            top: 50px;
+            float: left;
+        }
+        #wrapper {
+            height: 400px;
+            width: 600px;
+            background-color: #ffffff;
+            border: 1px black solid;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 <body>
 <!--<h2>"dropdown" Style</h2>-->
 
 <fieldset>
-    <label for="speedC"></label>
-    <select name="speedC" id="speedC" style="background: white; visibility: visible;">
+    <label for="selector"></label>
+    <select name="selector awesome" id="selector" style="background: white; visibility: visible;">
         <option value="Slower" class="whoo">Slower</option>
         <option value="Slow">Slow</option>
         <option value="Medium" selected="selected">Medium</option>
@@ -30,17 +50,55 @@
 </fieldset>
 
 
+
+
+<div id="wrapper">
+    <!--<div id="block1" class="block"></div>-->
+    <!--<div id="block2" class="block"></div>-->
+</div>
+
 <script type="text/javascript">
 
 //    console.log ($('#select'));
 //    $('#select').selectmenu();
 
-    $('select#speedC').selectmenu(
+    $('select#selector').selectmenu(
             {
                 menuWidth: 400,
                 width: 300
             }
     );
+
+    $('#selector').change(function() {
+        var newBlock = document.createElement('div');
+        $(newBlock).class = "block";
+        $(newBlock).attr("class", "block");
+        $(newBlock).css({
+            top: 500
+        });
+
+        console.log("appending block");
+//        $('#wrapper').append("<div class='block' />");
+
+        $(newBlock).animate({
+            top: 10
+        });
+
+        $('#wrapper').append(newBlock);
+
+    });
+
+    $.ready(function() {
+        $('#block').css({
+            top: 200
+        })
+    });
+
+//    $(newItem.el).css({
+//        position: 'absolute',
+//        left: item.attributes.xPos,
+//        top: item.attributes.yPos
+//    });
 
 </script>
 
