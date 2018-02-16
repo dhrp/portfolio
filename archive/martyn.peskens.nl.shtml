@@ -1,0 +1,24 @@
+<h1>A portfolio site for the artist martyn peskens</h1>
+
+<table>
+<tr>
+  <td align="center"><table width="550" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top" colspan="2" align="left"><strong>Introduction</strong> <br />
+          Martyn Peskens (my brother) has graduated from the Gerrit Rietveld 
+          Academy in Amsterdam in fine arts. Most of his work are sculptures, and the best way to represent these is by pictures. In this site the pictures are what is is all about and the navigation  of little importance. 
+          By hiding the background I wanted to make the visitor aware of what the purpose of the site is: To watch. <br />
+          <br />
+          <img src="images/martyn-pieces.jpg" alt="piece of matyn's website" width="550" height="249" border="0" /><br />
+        </td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+	  <tr>
+        <td valign="top" width="250" align="left" nowrap="nowrap"><strong>Technologies used</strong><br />
+			This site is made in pure flash 8<br />
+            <br />
+        	Visit the site <a href="http://www.martyn.peskens.nl" target="_blank">here</a>
+		</td>
+        <td><img src="images/martyn-navigation.jpg" alt="martyn navigation" width="300" height="306" border="0" /></td>
+      </tr>
+</table>
