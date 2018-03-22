@@ -5,23 +5,43 @@ div {
 
 body {
     background-color: white;
-    font-family: "DaxlinePro", "American Typewriter", "futura-pt", sans-serif;
+    /*font-family: DaxlinePro, serif;*/
+    font-family: "ff-dax-web-pro", "DaxlinePro", "Helvetica Neue", sans-serif;
+    margin: 0;
 }
 
-footer {
-    font-family: "DaxlinePro", "American Typewriter", "futura-pt", sans-serif;
+h1, h2, h3, h4 {
+    font-weight: normal;
+    /*font-size: 12pt;*/
 
 }
+
+#footer {
+    font-family: "ff-dax-web-pro", "DaxlinePro", "futura-pt", sans-serif;
+    position: absolute;
+    float: left;
+    bottom: 12px;
+
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+a:hover {
+    color: #888;
+}
+
 
 .gridBlock {
     width: 130px;
     height: 130px;
     background-color: #f8f8ff;
     float: left;
-    margin: 10px;
-    scale: 2;
+    margin: 7px;
     position: relative;
-    top: 0px;
 }
 
 .gridblock.bottom {
@@ -30,7 +50,7 @@ footer {
 }
 
 .innerblock {
-    margin: 5px;
+    /*margin: 5px;*/
     /*background-color: black;*/
 }
 
@@ -49,28 +69,30 @@ footer {
     position: relative;
     display: block;
     float: left;
-    margin-top: 75px;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #portfolioTitle {
-    font-size: 22pt;
+    font-size: 24pt;
 }
 
 #gridContainer, #gridContainerBottom {
     /*border: solid 1px black;*/
-    width: 640px;
+    width: 600px;
 
     position: relative;
     float: left;
+
     /*margin-left: 100px;*/
-    margin-top: 40px;
-    height: 600;
-    overflow: hidden;
+    /*margin-top: 40px;*/
+    /*height: 600px;*/
+    /*overflow: hidden;*/
 
     /*top: 40px;*/
-
+    margin-top: 40px;
+    clear: right;
 }
 
 #blockPositioner {
@@ -80,11 +102,81 @@ footer {
     position: relative;
     /*background-color: #050505;*/
     float: left;
+
     /*overflow: hidden;*/
 
 }
 
 #wrapper {
     position: relative;
-    /*background-color: #FFFFFB;*/
+    margin: 0;
+    /*background-color: silver;*/
+
+}
+
+#detailsPage {
+    padding: 0;
+    margin: 0;;
+    position: relative;
+    /*min-width: 1100px;*/
+    /*height: 2000px;*/
+    /*border: 1px blue solid;*/
+    /*background-color: #fff5ee;*/
+
+}
+
+
+.nav-top {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 10px;
+
+}
+
+
+/*//// detail pages */
+
+
+
+#imagesArea {
+    min-width: 600px;
+    margin-left: 430px;
+    /*float: left;*/
+    /*left: 40px;*/
+}
+
+#imagesArea img, #imagesArea iframe {
+    margin: 20px;
+    text-align: right;
+
+
+    -moz-box-shadow: 5px 5px -5px #888;
+    -webkit-box-shadow: 5px 5px -5px #888;
+    box-shadow: 5px 5px 5px #888;
+}
+
+#imagesArea .noShadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+/*Technically the textblock floats left inside the main images area*/
+#textArea {
+    float: left;
+    width: 350px;
+    text-align: justify;
+    text-justify: newspaper;
+    padding: 40px;
+
+}
+
+
+#textArea h1 {
+    line-height: 1em;
+    margin-top: 0pt;
 }

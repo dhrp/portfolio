@@ -38,7 +38,7 @@ Portfolio.Item = Em.Object.extend({
  **************************/
 
 
-Portfolio.MyView = Em.View.extend({
+Portfolio.ItemView = Em.View.extend({
 
     templateName: 'itemTemplate',
     classNames: ['gridBlock'],
@@ -49,7 +49,7 @@ Portfolio.MyView = Em.View.extend({
 
 
 Portfolio.MyCollectionView = Em.ContainerView.create({
-   childViews: [Portfolio.MyView.create(), Portfolio.MyView.create()]
+   childViews: [Portfolio.ItemView.create(), Portfolio.ItemView.create()]
 
 });
 
